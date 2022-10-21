@@ -10,15 +10,15 @@ import asyncio
 import argparse
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-#  python3 bot.py -s fd7d86db-9f89-476a-9bf5-dbbccefc4275.Hmto0ccO_4qvLJvfL_7DZWi_yfc  -u http://192.9.150.54:8000 -c 1015378438523203686
+
 start_time = time.time()
 
 url = None #"http://192.9.150.54:8000"
 pages=1
-session_cookie = None #"a058ada8-b6ba-4f7d-aaf5-0249077e3554.6kqMnzzHzcw5cKkQog5-uez607w"
-channel_id =None #"1015378437856313444"
+session_cookie = None 
+channel_id =None
 prevsolve=""
-TOKEN = "MTAxNTM0OTYzNTMxOTA4MzA1OA.GS-8zL.BVS6DuvG55ugBWztY7palbfWTf36elSQARn-Os"
+TOKEN = None
 
 intents = discord.Intents.default()
 intents.message_content = True
